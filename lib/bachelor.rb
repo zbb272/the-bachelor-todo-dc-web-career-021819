@@ -49,5 +49,15 @@ def get_occupation(data, hometown)
 end
 
 def get_average_age_for_season(data, season)
-  # code here
+  average_age = 0
+  number_of_contestants = 0
+  data.each do | season_key, season_data |
+    if season_key == season 
+      season_data.each do | contestant |
+        average_age += contestant["age"]
+        number_of_contestants += 1 
+      end 
+    end 
+  end 
+  winner_name
 end
