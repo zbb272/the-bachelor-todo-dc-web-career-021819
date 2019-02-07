@@ -15,11 +15,11 @@ end
 def get_contestant_name(data, occupation)
   contestant_name = ""
   data.each do | season_key, season_data |
-      season_data.each do | contestant |
-        if contestant["status"] == "Winner"
-          winner_name = contestant["name"].split(" ")[0]
-        end 
+    season_data.each do | contestant |
+      if contestant["status"] == "Winner"
+        winner_name = contestant["name"].split(" ")[0]
       end 
+    end 
   end 
   contestant_name
 end
