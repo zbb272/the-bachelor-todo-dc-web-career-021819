@@ -28,7 +28,7 @@ def count_contestants_by_hometown(data, hometown)
   hometown_count = 0
   data.each do | season_key, season_data |
     season_data.each do | contestant |
-      if contestant["occupation"] == occupation
+      if contestant["hometown"] == hometown
         hometown_count += 1
       end 
     end 
