@@ -17,7 +17,7 @@ def get_contestant_name(data, occupation)
   data.each do | season_key, season_data |
     season_data.each do | contestant |
       if contestant["occupation"] == occupation
-        contestant_name = contestant["occupation"]
+        contestant_name = contestant["name"]
       end 
     end 
   end 
